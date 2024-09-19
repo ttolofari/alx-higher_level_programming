@@ -2,7 +2,7 @@
 
 def to_subtract(list_num):
     max_num = max(list_num)
-    return max_num - sum(n for n in list_num if n < max_num)
+    return (max_num - sum(n for n in list_num if n < max_num))
 
 def roman_to_int(roman_string):
     if not isinstance(roman_string, str):
@@ -33,5 +33,5 @@ def roman_to_int(roman_string):
 
     total += to_subtract(current_values)
 
-    return total
+    return (total)
 
